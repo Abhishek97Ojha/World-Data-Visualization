@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>World Countries Data Visualization</title>
+</head>
+<body>
+    <div class="head">
+        <h1 class="heading">World Countries Data</h1>
+        <div class="subHeading">
+            <p>Currently, we have<p id="number"></p>countries</p>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="button">
+            <button onclick="population()">POPULATION</button>
+            <button onclick="language()">LANGUAGES</button>
+        </div>
+        <p id="middle"></p>
+    </div>
+    <div class="bottom" id="detail">
+    </div>
+</body>
+</html>
