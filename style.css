@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
     /* border: 2px solid red; */
@@ -13,27 +14,30 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.head{
+
+.head {
     background-color: rgb(240, 240, 240);
     /* border: 2px solid red; */
     width: 100%;
-    height: 16%;
+    height: 14%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.heading{
+
+.heading {
     /* border: 1px solid black; */
     width: 100%;
     height: 60%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 400;
     color: rgb(255, 145, 0);
 }
-.subHeading{
+
+.subHeading {
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -43,7 +47,8 @@ body{
     font-size: 1.1rem;
     font-weight: 500;
 }
-#number{
+
+#number {
     /* border: 1px solid black; */
     width: 2.5rem;
     text-align: center;
@@ -51,16 +56,17 @@ body{
     color: darkred;
 }
 
-.middle{
+.middle {
     /* border: 2px solid green; */
     width: 100%;
-    height: 13%;
+    height: 14%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.button{
+
+.button {
     margin-top: 6px;
     /* border: 1px solid blue; */
     width: 21.5rem;
@@ -68,21 +74,24 @@ body{
     display: flex;
     justify-content: space-between;
 }
-button{
+
+button {
     height: 100%;
     width: 10rem;
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
     font-weight: 700;
     background-color: rgb(255, 145, 0);
     border: none;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     cursor: pointer;
 }
-button:active{
+
+button:active {
     transform: translateY(1px);
     box-shadow: 0 1px #666;
 }
-#middle{
+
+#middle {
     /* border: 1px solid red; */
     width: 100%;
     height: 30%;
@@ -90,25 +99,28 @@ button:active{
     font-weight: 500;
     margin-top: 3px;
 }
-.bottom{
+
+.bottom {
     background-color: rgb(240, 240, 240);
     /* border: 2px solid blue; */
     width: 100%;
-    height: 71%;
+    height: 72%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(50, 50, 93, 0.2) 0px -3px 7px 1px;
 }
-#data{
+
+#data {
     /* border: 1px solid black; */
     width: 100%;
     height: 7%;
     display: flex;
     justify-content: center;
 }
-.name{
+
+.name {
     /* border: 1px solid red; */
     height: 100%;
     width: 6rem;
@@ -117,21 +129,104 @@ button:active{
     margin-right: 1.3rem;
 
 }
-.bar{
+
+.bar {
     height: 100%;
     width: 50%;
 }
-.color{
+
+.color {
     /* border: 1px solid blue; */
     height: 100%;
     width: 100%;
     background-color: rgb(255, 145, 0);
 }
-.total{
+
+.total {
     /* border: 1px solid green; */
     width: 8rem;
     height: 100%;
     font-weight: 700;
     /* text-align: center; */
     margin-left: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .head {
+        height: 13%;
+    }
+
+    .middle {
+        height: 14%;
+    }
+
+    .bottom {
+        height: 73;
+    }
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .button {
+        width: 19rem;
+        height: 38%;
+    }
+
+    button {
+        width: 9rem;
+    }
+
+    #data {
+        width: 90%;
+    }
+
+    .name {
+        width: 8rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .head {
+        height: 13%;
+    }
+
+    .middle {
+        height: 14%;
+    }
+
+    .bottom {
+        height: 73;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .button {
+        width: 17rem;
+        height: 38%;
+    }
+
+    button {
+        width: 8rem;
+    }
+
+    #data {
+        width: 95%;
+    }
+
+    .name {
+        width: 8rem;
+        font-size: .8rem;
+        margin-right: .5rem;
+
+    }
+
+    .total {
+        margin-left: 1rem;
+        font-size: .8rem;
+    }
 }
